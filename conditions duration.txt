@@ -1,0 +1,31 @@
+//Conditions time duration display
+if (cityF[0] && cityT[1]){
+   document.querySelector('#duration').textContent = timeDuration[0];
+} else if (cityF[0] && cityT[2]){
+   document.querySelector('#duration').textContent = timeDuration[1];}
+   else if (cityF[0] && cityT[3]){
+      document.querySelector('#duration').textContent = timeDuration[2];}
+      else if (cityF[0] && cityT[4]){
+         document.querySelector('#duration').textContent = timeDuration[3];}
+         else if (cityF[0] && cityT[5]){
+            document.querySelector('#duration').textContent = timeDuration[4];}
+            else if (cityF[1] && cityT[2]){
+               document.querySelector('#duration').textContent = timeDuration[5];}
+               else if (cityF[1] && cityT[3]){
+               document.querySelector('#duration').textContent = timeDuration[6];}
+               else if (cityF[1] && cityT[4]){
+                  document.querySelector('#duration').textContent = timeDuration[7];}
+                  else if (cityF[1] && cityT[5]){
+                     document.querySelector('#duration').textContent = timeDuration[8];}
+                     else if (cityF[2] && cityT[3]){
+                        document.querySelector('#duration').textContent = timeDuration[9];}
+                        else if (cityF[2] && cityT[4]){
+                           document.querySelector('#duration').textContent = timeDuration[10];}
+                           else if (cityF[2] && cityT[5]){
+                              document.querySelector('#duration').textContent = timeDuration[11];}
+                              else if (cityF[3] && cityT[4]){
+                                 document.querySelector('#duration').textContent = timeDuration[12];}
+                                 else if (cityF[3] && cityT[5]){
+                                    document.querySelector('#duration').textContent = timeDuration[13];}
+                                    else{
+                                       document.querySelector('#duration').textContent = timeDuration[14];}

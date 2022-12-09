@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Airlines</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Merriweather+Sans&family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+</head>
+<div>
+
+   <h1>BOOK A FLIGHT</h1>
+
+   <div class="container">
+
+<form>
+   <div class="searchSection">
+   <label id="labelCityFrom" for="cityFrom">From</label>
+<select id="cityFrom">
+   <option value="" disabled>Select a city</option>
+   <option value="50">A City</option>
+   <option value="60">B City</option>
+   <option value="75">C City</option>
+   <option value="55">D City</option>
+   <option value="65">E City</option>
+   <option value="80">F City</option>
+</select>
+
+<label id="labelCityTo" for="cityTo">To</label>
+<select id="cityTo">
+   <option value="" disabled>Select a city</option>
+   <option value="50">A City</option>
+   <option value="60">B City</option>
+   <option value="75">C City</option>
+   <option value="55">D City</option>
+   <option value="65">E City</option>
+   <option value="80">F City</option>
+</select>
+
+<div>
+    <input type ="radio" id="oneWay" name="date" value="1"><span>one way</span></input>
+   <input type ="radio" id="roundTrip"  name="date" value="1.75"><span>round trip</span></input>
+</div>
+<br>
+
+<label id="dates">Departure date</label>
+<input class="oneWayDate" type="date">
+<div class="roundTripCheck">
+<label >Return date</label>
+<input class="roundWayDate" type="date"></div>
+<br>
+<label for="class">Select class</label>
+<select name="class" id="class">
+   <option disabled value="">Select class</option>
+   <option value="1.1">economy class</option>
+   <option value="2">business class</option>
+</select>
+
+<div>
+<label for="">Passengers</label>
+   <input id="howManyPeople" type="text" placeholder="How many people">
+</div>
+<br>
+
+<button id="baggageBtn" for="baggage">Add more bags</button>
+
+<select id="baggage">
+   <option disabled value="">How many baggage</option>
+   <option selected value="15">0</option>
+   <option value="15">1</option>
+   <option value="30">2</option>
+   <option value="45">3</option>
+</select>
+<br>
+<button id="calculateBtn">SEARCH</button>
+</div>
+</form>
+
+<div class ="infoSection">
+<div class="priceSection">
+   <p>Flight on:   <span class="dateOfTheFlight"></span> </p>
+   <p>At:   <span id="time"></span> </p>
+   <p>From: <span class="cityFromDisplay"></span></span> to <span class="cityToDisplay"></span></p>
+   
+   <div class="backFlightInfo">
+      
+   <p >Flight 2 is on: <span class ="dateOfTheBackFlight"></span></p>
+   <p>At:   <span id="timeBack"></span> </p>
+   <p>From: <span class="cityBackFromDisplay"></span></span> to <span class="cityBackToDisplay"></span></p>
+</div>
+
+<p>Flight duration is:  <span id="duration"></span></p>
+<p>You have: <span id="addBags"></span> additional bags.</p>
+
+   <p>Price ticket:  <span>$</span><span id="price"></span></p>
+   <p>Price per person:  <span>$</span><span id="pricePerPerson"></span></p>
+   <ul><span>Included per passenger:</span>
+      
+   <li> 1 hand baggage and 1 personal item (12 kg total)*</li>   
+   <li> 1 checked baggage (23 kg)</li> 
+</ul>
+</div>  
+</div>
+
+</div>
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+<script>
+    moment().format();
+</script>
+   
+   <script src="script.js"></script>
+</body>
+</html>
